@@ -127,5 +127,4 @@ function add_area_field() {
   `;
     document.getElementById('first_table_body').append(tr);
 }
-activity3();
 //# sourceMappingURL=activity3.js.map
