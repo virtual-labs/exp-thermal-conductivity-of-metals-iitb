@@ -52,7 +52,7 @@ function activity1() {
     //define the canvas
     pp.addcanvas('mycanvas');
     // pp.addtorightpannel(question_div_box, 3);
-    pp.showtitle(`<p id="exp-title">Let's Identify the components required to study the <span id="des"> Heat Transfer Coefficient under Turbulent Conditions</span><p>`, 3);
+    pp.showtitle(`<p id="exp-title">Let's Identify the components required</p>`, 3);
     pp.showscore(0, 3);
     canvas = pp.canvas;
     context = canvas.getContext('2d');
