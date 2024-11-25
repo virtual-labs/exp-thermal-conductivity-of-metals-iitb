@@ -2,7 +2,7 @@ var obtable_verified = false;
 // var button = `<button class="offcanvasbtn"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight1"><i class="bi bi-gear offcanvasicon"></i></button>`;
 var ob_btn = `<button id="panel1_btn" class="btn btn-primary" onclick="add_area_field();" style="
 position: absolute; bottom: 12vh; width: 85%;">Next</button>`;
-var ob_btn_0 = `<button id="panel1_btn" class="btn btn-primary" onclick="activity4();" style="
+var ob_btn_0 = `<button id="panel1_btn" class="btn btn-primary" onclick="activity3_1();" style="
 position: absolute; bottom: 12vh; width: 85%;">Next</button>`;
 // pp.addtoleftpannel(table);
 // pp.addtoleftpannel("<br>");
@@ -12,7 +12,9 @@ position: absolute; bottom: 12vh; width: 85%;">Next</button>`;
 function activity3() {
     pp.clearleftpannel();
     //   pp.addtoleftpannel(button);
-    pp.showdescription('<p style="background-color: #f4ccccff; border-radius: 10px; border: black; padding: 5%; font-weight: 500; font-size: 2.5vw;">You get  <br> 5 points for correct calculation <br> 4 points for second attempt <br> 3 points for third attempt</p>', 3);
+    // pp.showdescription(
+    //   '<p style="background-color: #f4ccccff; border-radius: 10px; border: black; padding: 5%; font-weight: 500; font-size: 2.5vw;">You get  <br> 5 points for correct calculation <br> 4 points for second attempt <br> 3 points for third attempt</p>', 3
+    // );
     pp.showtitle("Select the Dimensions of the Setup", 3);
     pp.showscore("100", 3);
     var selection_table = `
@@ -127,4 +129,5 @@ function add_area_field() {
   `;
     document.getElementById('first_table_body').append(tr);
 }
+//activity3();
 //# sourceMappingURL=activity3.js.map

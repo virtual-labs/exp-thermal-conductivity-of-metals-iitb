@@ -108,4 +108,5 @@ function act4_verify_tab1() {
     pp.addtorightpannel(act4_btn_1, 3);
     trigger_offcavnas();
 }
+//activity4();
 //# sourceMappingURL=activity4.js.map

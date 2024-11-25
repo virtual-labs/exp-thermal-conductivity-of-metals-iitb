@@ -39,9 +39,13 @@ function activity6() {
 }
 function verify_avg_values() {
     let val1 = document.getElementById("k-avg-input");
-    console.log(parseFloat(val1.value));
+    let sum = 0;
+    for (let i = 0; i < main_table_data.length; i++) {
+        sum += main_table_data[i][8];
+    }
+    console.log(sum / main_table_data.length);
     // console.log(Q.value, To.value, Ti.value, ti.value, to.value);
-    if (!verify_values(parseFloat(val1.value), table_3[0][1])) {
+    if (!verify_values(parseFloat(val1.value), sum / main_table_data.length)) {
         console.log("please input the correct K-avg value");
         return;
     }
@@ -117,10 +121,6 @@ function draw_chart() {
                     borderColor: 'blue',
                     tension: 0.5,
                     showLine: false,
-                    // yAxisID: 'A',
-                    // borderWidth: 1,
-                    // borderColor: "green",
-                    // backgroundColor: "rgba(34, 139, 34, 0.5)",
                 },
                 {
                     label: 'Best Fit',

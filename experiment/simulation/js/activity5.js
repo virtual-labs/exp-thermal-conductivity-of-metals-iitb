@@ -4,12 +4,13 @@ position: absolute; bottom: 8vh; width: 85%;">Next</button>`;
 var act5_plot_btn = `<button id="panel1_btn" class="btn btn-primary" onclick="activity6();" style="
 position: absolute; bottom: 8vh; width: 85%;">Next</button>`;
 var act5_table = `   
+<div style='height: 100%; overflow: auto;'>
  <div style="text-align: center; padding: 2% 0; font-size: 4vw;">
 Physical Properties at Mean Temperature
 </div>
 
 <div>
-<table class="table">
+<table class="table" style='overflow: auto; height: 40vw;'>
     <tbody id="act5-table-2">
       <tr>
         <td style="padding: 2% 2% !important; font-size: 2.2vw;" scope="row">Diameter of Test Specimen, d (cm)</td>
@@ -33,6 +34,8 @@ Physical Properties at Mean Temperature
     </tr>
     </tbody>
   </table>
+</div>
+
 </div>
 `;
 var ob_btn_5 = `<button id="panel1_btn" class="btn btn-primary" onclick="act5_show_values();" style="
@@ -77,7 +80,7 @@ function act5_show_values() {
     pp.addtorightpannel(act5_ob2_btn, 3);
 }
 var all_properties_without_table = `
-
+<div style='height: 100%; overflow: auto;'>
 <div id="left-props" class="row" style="font-size: calc(2vw + 5px);">
     <div class="col-4">Diamneter of Test Specimen, d (cm)</div>
     <div class="col-2">${diameter}</div>
@@ -115,9 +118,13 @@ var all_properties_without_table = `
 </div>
 <div class="col-3">K = (Q x (L/100))/(&Delta;T x A)</div>
 </div>
+
+<br><br>
+
+</div>
 `;
 var main_table = `
-<div id="act5-main-table" class="table-responsive">
+<div id="act5-main-table" class="table-responsive" style='height: 100%; overflow: auto;'>
 <table  class="table" style="height: 100vh !important;">
     <thead>
       <tr>
@@ -157,10 +164,10 @@ function table_calculations() {
     pp.clearleftpannel();
     pp.clearrightpannel();
     pp.addoffcanvas(3);
-    pp.showtitle('Calculate K</p>', 3);
+    pp.showtitle('<p>Calculate K</p>', 3);
     var all_properties = `
 
-<div style="overflow-y: auto !important; max-height: 80%;">
+<div style="max-height: 80%; overflow-y: auto !important;">
 <table class="table" style="height: 30% !important;">
     <thead>
       <tr>
@@ -193,7 +200,7 @@ function table_calculations() {
       </tr>
 
       <tr>
-      <td style="padding: 2% 2% !important; font-size: 12px" scope="row">Density, &rho (kg/m<sup>-3</sup>)</td>
+      <td style="padding: 2% 2% !important; font-size: 12px" scope="row">Density, &rho; (kg/m<sup>-3</sup>)</td>
       <td style="padding: 2% 2% !important; font-size: 12px" colspan="2">${density}</td>
       
     </tr>
@@ -233,22 +240,22 @@ function act5_verify_obtable() {
     let val2 = document.getElementById("mt-2");
     let val3 = document.getElementById("mt-3");
     let val4 = document.getElementById("mt-4");
-    console.log(parseFloat(val1.value));
+    console.log(main_table_data[0][4], main_table_data[0][5], main_table_data[0][6], (main_table_data[0][5] * (ht_length / 100)) / (main_table_data[0][6] * cs_area));
     // console.log(Q.value, To.value, Ti.value, ti.value, to.value);
     if (!verify_values(parseFloat(val1.value), main_table_data[0][4])) {
-        console.log("please correct the m value");
+        alert("please correct the m value");
         return;
     }
     if (!verify_values(parseFloat(val2.value), main_table_data[0][5])) {
-        console.log("please correct the Q value");
+        alert("please correct the Q value");
         return;
     }
     if (!verify_values(parseFloat(val3.value), main_table_data[0][6])) {
-        console.log("please correct the delta T value");
+        alert("please correct the delta T value");
         return;
     }
-    if (!verify_values(parseFloat(val4.value), main_table_data[0][7])) {
-        console.log("please correct the K value");
+    if (!verify_values(parseFloat(val4.value), (main_table_data[0][5] * (ht_length / 100)) / (main_table_data[0][6] * cs_area))) {
+        alert("please correct the K value");
         return;
     }
     pp.addtorightpannel(act5_ob_btn, 3);
@@ -297,4 +304,5 @@ var label = [];
 var data = [];
 var data1 = [];
 var pol;
+//activity5();
 //# sourceMappingURL=activity5.js.map

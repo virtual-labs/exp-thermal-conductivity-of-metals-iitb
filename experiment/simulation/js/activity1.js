@@ -340,5 +340,9 @@ function a1_mouseclick(e) {
     let y = Math.round((canvas.height - (e.clientY - rect.y)) / lscale);
     a1_check_isinside(x, y);
 }
+function show_des() {
+    var bsOffcanvas = new bootstrap.Offcanvas(document.getElementById("offcanvasRight3"));
+    bsOffcanvas.show();
+}
 activity1();
 //# sourceMappingURL=activity1.js.map
