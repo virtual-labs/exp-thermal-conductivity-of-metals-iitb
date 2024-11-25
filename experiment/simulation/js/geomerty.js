@@ -538,6 +538,32 @@ var Chemistry;
         }
     }
     Chemistry.anim_image_x_dir = anim_image_x_dir;
+    class anim_image_x_dir_slow extends Custome_image {
+        constructor(image, stpt, width, height, canvas) {
+            super(image, stpt, width, height, canvas);
+            this.l = 290;
+            this.l_last = 525;
+            this.startx = 0;
+            this.width_last = 0;
+        }
+        draw() {
+            if (this.move_x) {
+                this.motion_x();
+            }
+            this.context.save();
+            this.context.translate(this.stpt.x * lscale, this.stpt.y * lscale);
+            this.context.scale(1, -1);
+            if (this.revolve) {
+                this.rotate();
+            }
+            this.context.drawImage(this.img, this.startx, this.dy - this.l, this.dx - this.width, this.dy, (-this.dx / 2 + this.startx) * lscale, (this.dy / 2 - this.l) * lscale, (this.dx - this.width) * lscale, (this.dy) * lscale);
+            if (this.width > this.width_last) {
+                this.width -= 0.2;
+            }
+            this.context.restore();
+        }
+    }
+    Chemistry.anim_image_x_dir_slow = anim_image_x_dir_slow;
     class anim_image_y_dir_down extends Custome_image {
         constructor(image, stpt, width, height, canvas) {
             super(image, stpt, width, height, canvas);
@@ -565,6 +591,33 @@ var Chemistry;
         }
     }
     Chemistry.anim_image_y_dir_down = anim_image_y_dir_down;
+    class anim_image_y_dir_up extends Custome_image {
+        constructor(image, stpt, width, height, canvas) {
+            super(image, stpt, width, height, canvas);
+            this.l = 290;
+            this.l_last = 525;
+            this.startx = 0;
+            this.starty = 0;
+            this.l_last = this.dy;
+        }
+        draw() {
+            if (this.move_x) {
+                this.motion_x();
+            }
+            this.context.save();
+            this.context.translate(this.stpt.x * lscale, this.stpt.y * lscale);
+            this.context.scale(1, -1);
+            if (this.revolve) {
+                this.rotate();
+            }
+            this.context.drawImage(this.img, this.startx, this.canvas.height - this.starty, this.dx - this.width, this.canvas.height - this.l, (-this.dx / 2 + this.startx) * lscale, (-this.dy / 2 + this.canvas.height - this.starty) * lscale, (this.dx - this.width) * lscale, (this.canvas.height - this.l) * lscale);
+            if (this.l < this.l_last) {
+                this.l++;
+            }
+            this.context.restore();
+        }
+    }
+    Chemistry.anim_image_y_dir_up = anim_image_y_dir_up;
     class Pump_controller extends Geometry {
         constructor(canvas) {
             super();

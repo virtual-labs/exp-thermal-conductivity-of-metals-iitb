@@ -37,7 +37,7 @@ class Pannel {
       <br>  `;
     }
     addcanvas(canvasid) {
-        this.leftpannel.innerHTML = `<canvas id="${canvasid}"></canvas>`;
+        this.leftpannel.innerHTML += `<canvas id="${canvasid}"></canvas>`;
         this.canvas = document.getElementById(canvasid);
     }
     addtoleftpannel(component) {
