@@ -38,4 +38,4 @@ where, <br>
 
 <br>
 
-<p><strong>Conclusion:</strong> Thermal conductivity is a fundamental property of metals that determines their efficiency in conducting heat. The temperature dependence of thermal conductivity reveals how the material's ability to conduct heat changes with temperature, primarily influenced by electron and phonon interactions. Understanding these principles is essential for optimizing material performance in various thermal applications.</p>
+<p><strong>Conclusion:</strong> Thermal conductivity is a fundamental property of metals that determines their efficiency in conducting heat. The temperature dependence of thermal conductivity reveals how the material's ability to conduct heat changes with temperature, primarily influenced by electron and phonon interactions. Understanding these principles is essential for optimizing material performance in various thermal applications.</p><script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script>

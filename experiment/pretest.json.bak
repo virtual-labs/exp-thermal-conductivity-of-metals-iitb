@@ -1,0 +1,47 @@
+[
+   {
+      "question": "Which of these has the least thermal conductivity?",
+      "qid": 1,
+      "option_a": "Gold",
+      "option_b": "Silver",
+      "option_c": "Iron",
+      "option_d": null,
+      "correct_option": "c"
+   },
+   {
+      "question": "Which of these has the highest thermal conductivity?",
+      "qid": 2,
+      "option_a": "Mercury",
+      "option_b": "Air",
+      "option_c": "Water",
+      "option_d": null,
+      "correct_option": "a"
+   },
+   {
+      "question": "Which of these has the highest conductive resistance based on the thickness?",
+      "qid": 3,
+      "option_a": "<img src=\"./lab-manual/images/thick1.png\" alt=\"thick\">",
+      "option_b": "<img src=\"./lab-manual/images/thick2.png\" alt=\"thin\">",
+      "option_c": "<img src=\"./lab-manual/images/thick3.png\" alt=\"medium\">",
+      "option_d": null,
+      "correct_option": "a"
+   },
+   {
+      "question": "Which of these has the highest thermal conductivity based on the temperature?",
+      "qid": 4,
+      "option_a": "<img src=\"./lab-manual/images/temp1.png\" alt=\"moderate\">",
+      "option_b": "<img src=\"./lab-manual/images/temp2.png\" alt=\"hot\">",
+      "option_c": "<img src=\"./lab-manual/images/temp3.png\" alt=\"cold\">",
+      "option_d": null,
+      "correct_option": "c"
+   },
+   {
+      "question": "Which of these has the highest thermal conductivity?",
+      "qid": 5,
+      "option_a": "Brass",
+      "option_b": "Copper",
+      "option_c": "Aluminium",
+      "option_d": null,
+      "correct_option": "b"
+   }
+]
