@@ -1,0 +1,47 @@
+[
+   {
+      "question": "Which of these has the least thermal conductivity?",
+      "qid": 1,
+      "option_a": "Nitrobenzene",
+      "option_b": "Molten Sodium",
+      "option_c": "Water",
+      "option_d": null,
+      "correct_option": "a"
+   },
+   {
+      "question": "Which of these has the least thermal conductivity?",
+      "qid": 2,
+      "option_a": "Chromium",
+      "option_b": "Zinc",
+      "option_c": "Nickel",
+      "option_d": null,
+      "correct_option": "a"
+   },
+   {
+      "question": "Which of these has the highest thermal conductivity?",
+      "qid": 3,
+      "option_a": "Magnesium",
+      "option_b": "Copper",
+      "option_c": "Stainless-steel",
+      "option_d": null,
+      "correct_option": "b"
+   },
+   {
+      "question": "Which of these has the least thermal conductivity?",
+      "qid": 4,
+      "option_a": "Aluminium",
+      "option_b": "Stainless-steel",
+      "option_c": "Iron",
+      "option_d": null,
+      "correct_option": "b"
+   },
+   {
+      "question": "Which of these has the highest thermal conductivity?",
+      "qid": 5,
+      "option_a": "Nickel",
+      "option_b": "Silver",
+      "option_c": "Gold",
+      "option_d": null,
+      "correct_option": "b"
+   }
+]
