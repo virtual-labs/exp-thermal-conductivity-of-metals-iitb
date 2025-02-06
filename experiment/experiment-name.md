@@ -1,1 +1,1 @@
-## Experiment name
+## To determine the thermal conductivity of metals and study the effect of temperature
